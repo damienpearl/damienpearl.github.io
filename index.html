@@ -1,32 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Damien Pearl | Portfolio</title>
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <!-- Google Fonts: Inter -->
+  <!--<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" /> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="timeline">
-            <div class="entry">
-                <h3>Job Title</h3>
-                <p>Company Name - Year</p>
-                <p>Job description will go here</p>
-            </div>
-        </div>
-    </section>
+  <!-- Header / Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">damien pearl</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <!--<li><a href="#robots">Robots</a></li> -->
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#socials">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <script src="script.js"></script>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hello,</h1>
+      <h2>I'm Damien Pearl</h2>
+      <p>
+        a mechanical engineering student at the University of Massachusetts Amherst.<br>
+        Research Interests: Human-Robot Interaction, Bionics, Decision-Making.
+      </p>
+      <a href="resume.pdf" class="btn resume-btn"><i class="fa fa-download"></i> Get Resume</a>
+    </div>
+    <div class="hero-image">
+      <img src="img/stickman.png" alt="[it's a picture of me!]" />
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <!-- Design & Simulation -->
+    <div class="skill-group">
+      <h3>Design &amp; Simulation</h3>
+      <div class="skill-cards">
+        <div class="skill-card">
+          <img src="img/solidworks.svg" alt="Solidworks" />
+          <span>Solidworks</span>
+        </div>
+        <div class="skill-card">
+          <img src="img/onshape.png" alt="Onshape" />
+          <span>Onshape</span>
+        </div>
+        <div class="skill-card">
+          <img src="img/GD&T_Position.svg.png" alt="GD&T" />
+          <span>GD&amp;T*</span>
+        </div>
+        <div class="skill-card">
+          <img src="img/ANSS.svg" alt="ANSYS" />
+          <span>ANSYS</span>
+        </div>
+        <div class="skill-card">
+          <img src="img/MATLAB.svg" alt="MATLAB" />
+          <span>MATLAB</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Programming Languages -->
+    <div class="skill-group">
+      <h3>Programming Languages</h3>
+      <div class="skill-cards">
+        <div class="skill-card">
+          <img src="img/Python.svg" alt="Python" />
+          <span>Python</span>
+        </div>
+        <div class="skill-card">
+          <img src="img/cplusplus.svg" alt="C++" />
+          <span>C++</span>
+        </div>
+        <div class="skill-card">
+          <img src="img/Java.svg" alt="Java" />
+          <span>Java</span>
+        </div>
+        <div class="skill-card">
+          <img src="img/XML.svg" alt="XML" />
+          <span>XML</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Development Tools & Environments -->
+    <div class="skill-group">
+      <h3>Development Tools &amp; Environments</h3>
+      <div class="skill-cards">
+        <div class="skill-card">
+          <img src="img/ros.svg" alt="ROS" />
+          <span>ROS1</span>
+        </div>
+        <div class="skill-card">
+          <img src="img/vsc.svg" alt="VSCode" />
+          <span>VSCode</span>
+        </div>
+        <div class="skill-card">
+          <img src="img/Ubuntu.svg" alt="Ubuntu" />
+          <span>Ubuntu</span>
+        </div>
+        <div class="skill-card">
+          <img src="img/VirtualBox.svg" alt="VirtualBox" />
+          <span>Oracle VirtualBox</span>
+        </div>
+        <div class="skill-card">
+          <img src="img/github.png" alt="GitHub" />
+          <span>GitHub</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Data Analysis & Research -->
+    <div class="skill-group">
+      <h3>Data Analysis &amp; Research</h3>
+      <div class="skill-cards">
+        <div class="skill-card">
+          <img src="img/excel.svg" alt="Excel" />
+          <span>Excel</span>
+        </div>
+        <div class="skill-card">
+          <img src="img/RStudio.svg" alt="RStudio" />
+          <span>RStudio</span>
+        </div>
+        <div class="skill-card">
+          <img src="img/qualtrics.svg" alt="Qualtrics" />
+          <span>Qualtrics</span>
+        </div>
+        <div class="skill-card">
+          <img src="img/atlasti2.png" alt="Atlas.ti" />
+          <span>Atlas.ti</span>
+        </div>
+        <div class="skill-card">
+          <img src="img/LaTeX.svg" alt="LaTeX" />
+          <span>LaTeX</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications" class="publications">
+    <h2>Publications</h2>
+    <div class="publication-item">
+      <h3>TBD</h3>
+      <span class="date">March 2025</span>
+      <p>
+       Blurb Here
+      </p>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <h2>Experience</h2>
+    <div class="experience-item">
+      <h3>SHARE Lab, Oregon State University</h3>
+      <span class="date">October 2024 - Present</span>
+      <h4>Undergraduate Research Assistant</h4>
+      <p>Working on projects related to human-robot interaction and data analysis.</p>
+      <ul>
+        <li>Conducting quantitative and qualitative data analysis for ongoing research projects.</li>
+        <li>Assisting in designing and developing studies on human-robot collaboration.</li>
+        <li>Optimizing software systems for data collection and processing.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-item">
+      <h3>Recording &amp; Replay for the Kinova Gen3 Robotic Arm</h3>
+      <p>A tool to create, record and replay robotic arm movements.</p>
+      <a href="rec-rep.html" target="_blank">View Project</a>
+      <a href="https://github.com/dmprgm/arm" target="_blank">Source Code</a>
+    </div>
+    <div class="project-item">
+      <h3>Wooden Puzzle Game</h3>
+      <p>A handcrafted puzzle created using a wood CNC mill.</p>
+      <a href="woodpuzzle.html" target="_blank">View Project</a>
+    </div>
+  </section>
+
+ <!-- Robots Section -->
+ <section id="robots" class="robots">
+  <h2>Robots I've Worked On</h2>
+  <div class="robot-container">
+    <div class="robot">
+      <img src="img/Pixel1.png" alt="Robot 1" class="robot-image" />
+      <div class="contribution-level">🔰</div>
+      <div class="robot-info">
+        <p class="robot-description">
+          The first robot I ever worked on; I spent about 80 hours riveting that thing (and it's backup twin) together.
+        </p>
+      </div>
+    </div>
+    <div class="robot">
+      <img src="img/gnorboat.png" alt="Robot 2" class="robot-image" />
+      <div class="contribution-level">⚡</div>
+      <div class="robot-info">
+        <p class="robot-description">
+          Led a team of 4 to build an autonomous boat that could carry an orange across a pond.
+        </p>
+      </div>
+    </div>
+    <div class="robot">
+      <img src="img/steven.png" alt="Kinova Robotic Arm" class="robot-image" />
+      <div class="contribution-level">⚡⚡</div>
+      <div class="robot-info">
+        <p class="robot-description">
+          Worked with this Kinova Gen3 robotic arm to conduct research on human-robot interaction.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Socials Section -->
+  <section id="socials" class="socials">
+    <h2>Follow Me</h2>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/damien-pearl" target="_blank">
+        <img src="img/LinkedIn.svg" alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/dmprgm" target="_blank">
+        <img src="img/github.svg" alt="GitHub" />
+      </a>
+      <!--<a href="https://instagram.com/username" target="_blank">
+        <img src="img/instagram.png" alt="Instagram" />
+      </a> -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Created by Damien Pearl</p>
+  </footer>
 </body>
 </html>

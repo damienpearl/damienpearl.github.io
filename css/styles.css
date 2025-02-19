@@ -1,0 +1,339 @@
+/* Reset & Basic Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Space Mono', serif; /* set font to Space */
+  line-height: 1.6;
+  background: #f0f2f5; /* Softer background */
+  color: #333;
+}
+
+.space-mono-regular {
+  font-family: "Space Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+
+/* Header & Navigation */
+header {
+  background: #fff;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo a {
+  font-size: 1.8em;
+  font-weight: 700;
+  text-decoration: none;
+  color: #007acc; /* Blue accent */
+}
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav .nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+nav .nav-links li a:hover {
+  color: #007acc;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  background: #fff;
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.hero-text {
+  flex: 1;
+  min-width: 350px;
+  padding: 20px;
+}
+.hero-text h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  color: #007acc;
+}
+.hero-text h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+.hero-text h3 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #777;
+  font-style: italic;
+}
+.hero-text p {
+  margin-bottom: 25px;
+  font-size: 1.1em;
+}
+.hero-text .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #007acc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.hero-text .btn:hover {
+  background: #005fa3;
+}
+.hero-image {
+  flex: 1;
+  min-width: 300px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.hero-image img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 10px solid #007acc;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  color: #007acc;
+}
+
+/* Skills Section */
+.skill-group {
+  margin-bottom: 40px;
+}
+.skill-group h3 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  text-align: center;
+  color: #333;
+}
+.skill-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-card {
+  background: #fafafa;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  align-items: center;
+}
+
+.skill-card img {
+  max-width: 40px; /* Reduced image size */
+  margin-bottom: 10px;
+}
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Experience Section */
+.experience-item {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.experience-item h3 {
+  font-size: 1.8em;
+  margin-bottom: 5px;
+  color: #007acc;
+}
+.experience-item .date {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 10px;
+}
+.experience-item h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.experience-item ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Projects Section */
+.projects .project-item {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.projects .project-item:hover {
+  transform: translateY(-5px);
+}
+.projects .project-item h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #007acc;
+}
+.projects .project-item p {
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #555;
+}
+.projects .project-item a {
+  display: inline-block;
+  margin-right: 15px;
+  color: #007acc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.projects .project-item a:hover {
+  color: #005fa3;
+}
+
+/* Socials Section */
+.socials .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.socials .social-links a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+.socials .social-links a img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+}
+
+/* Robot Styling */
+#robots {
+  padding: 40px;
+}
+.robot-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.robot {
+  position: relative;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.robot:hover {
+  transform: scale(1.05);
+}
+.robot-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.contribution-level {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+.robot-info {
+  display: none;
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+.robot:hover .robot-info {
+  display: block;
+}
