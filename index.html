@@ -6,7 +6,7 @@
   <title>Damien Pearl | Portfolio</title>
   <!-- Favicon -->
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" /> <!-- change later... -->
   <!-- Google Fonts: Inter -->
   <!--<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" /> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#publications">Publications</a></li>
+        <!-- <li><a href="#publications">Publications</a></li> -->
         <li><a href="#experience">Experience</a></li>
         <!--<li><a href="#robots">Robots</a></li> -->
         <li><a href="#projects">Projects</a></li>
@@ -48,7 +48,7 @@
       <a href="resume.pdf" class="btn resume-btn"><i class="fa fa-download"></i> Get Resume</a>
     </div>
     <div class="hero-image">
-      <img src="img/stickman.png" alt="[it's a picture of me!]" />
+      <img src="img/headshot04-25_2.jpg" alt="[it's a picture of me!]" /> <!--replace with img/stickman.png when feeling insecure--> 
     </div>
   </section>
 
@@ -107,7 +107,7 @@
 
     <!-- Development Tools & Environments -->
     <div class="skill-group">
-      <h3>Development Tools &amp; Environments</h3>
+      <h3>Development Tools & Environments</h3>
       <div class="skill-cards">
         <div class="skill-card">
           <img src="img/ros.svg" alt="ROS" />
@@ -134,7 +134,7 @@
     
     <!-- Data Analysis & Research -->
     <div class="skill-group">
-      <h3>Data Analysis &amp; Research</h3>
+      <h3>Data Analysis & Research</h3>
       <div class="skill-cards">
         <div class="skill-card">
           <img src="img/excel.svg" alt="Excel" />
@@ -161,6 +161,7 @@
   </section>
 
   <!-- Publications Section -->
+  <!-- Uncomment this section when you get published
   <section id="publications" class="publications">
     <h2>Publications</h2>
     <div class="publication-item">
@@ -171,6 +172,7 @@
       </p>
     </div>
   </section>
+-->
 
   <!-- Experience Section -->
   <section id="experience" class="experience">
@@ -179,11 +181,12 @@
       <h3>SHARE Lab, Oregon State University</h3>
       <span class="date">October 2024 - Present</span>
       <h4>Undergraduate Research Assistant</h4>
-      <p>Working on projects related to human-robot interaction and data analysis.</p>
+      <p>Explored how humans interpret robot motion by designing a study pipeline from data collection to interpretation modeling.</p>
       <ul>
-        <li>Conducting quantitative and qualitative data analysis for ongoing research projects.</li>
-        <li>Assisting in designing and developing studies on human-robot collaboration.</li>
-        <li>Optimizing software systems for data collection and processing.</li>
+        <li>Built a ROS1 + Python system to generate, record, and replay precise robotic movements for consistent data capture.</li>
+        <li>Ran a 30-person study and surfaced significant trends in how participants associate motion with perceived robot intent.</li>
+        <li>Used Whisper AI and open coding to label participant reasoning from study audio, refining early-stage behavioral data.</li>
+        <li>Analyzed links between user-designed robot movements and expert ratings using BERT and KMeans clustering.</li>
       </ul>
     </div>
   </section>
@@ -193,7 +196,7 @@
     <h2>Projects</h2>
     <!--REC REP HERE -->
     <div class="project-item">
-      <h3>Recording &amp; Replay for the Kinova Gen3 Robotic Arm</h3>
+      <h3>Recording & Replay for the Kinova Gen3 Robotic Arm</h3>
       <p>A tool to create, record and replay robotic arm movements.</p>
       <a href="rec-rep.html" target="_blank">View Project</a>
       <a href="https://github.com/dmprgm/PLACEHOLDER" target="_blank">Source Code</a> <!-- Placeholder link -->
@@ -202,6 +205,16 @@
       <h3>Wooden Puzzle Game</h3>
       <p>A handcrafted puzzle created using a wood CNC mill.</p>
       <a href="woodpuzzle.html" target="_blank">View Project</a>
+    </div>
+    <div class="project-item">
+      <h3>Resource List</h3>
+      <p>A collection of resources I've found helpful in my undergraduate classes so far.</p>
+      <a href="reclist.html" target="_blank">View Project</a>
+    </div>
+    <div class="project-item">
+      <h3>placeholder</h3>
+      <p>A collection of resources I've found helpful in my undergraduate classes so far.</p>
+      <a href="index2.html" target="_blank">View Project</a>
     </div>
   </section>
 
@@ -239,9 +252,55 @@
   </div>
 </section>
 
+<!-- Contact Section -->
+ <section id ="contact" class="contact">
+    <h2>Contact Me</h2>
+    <button id="toggleFormBtn" class="fs-toggle-button">Get in Touch</button>
+  
+    <div class = "formspree-wrapper" id="contactForm" style="display: none">
+      <form
+        action="https://formspree.io/f/xyzearoz"
+        class="fs-form"
+        target="_top"
+        method="POST"
+        >
+        <div class="fs-field">
+          <label class="fs-label" for="name">Your Name</label>
+          <input class="fs-input" id="name" name="name" required />
+        </div>
+        <div class="fs-field">
+          <label class="fs-label" for="email">Email Address</label>
+          <input class="fs-input" id="email" name="email" required />
+          <p class="fs-description">
+            This will help me respond to your query via an email.
+          </p>
+        </div>
+        <div class="fs-field">
+          <label class="fs-label" for="subject">Subject</label>
+          <input class="fs-input" id="subject" name="subject" required />
+          <p class="fs-description">
+          </p>
+        </div>
+        <div class="fs-field">
+          <label class="fs-label" for="message">Message</label>
+          <textarea
+            class="fs-textarea"
+            id="message"
+            name="message"
+            required
+          ></textarea>
+          <p class="fs-description">What would you like to discuss?</p>
+        </div>
+        <div class="fs-button-group">
+          <button class="fs-button" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
   <!-- Socials Section -->
   <section id="socials" class="socials">
-    <h2>Follow Me</h2>
+    <h2>Find Me Elsewhere</h2>
     <div class="social-links">
       <a href="https://www.linkedin.com/in/damien-pearl" target="_blank">
         <img src="img/LinkedIn.svg" alt="LinkedIn" />
@@ -259,5 +318,10 @@
   <footer>
     <p>Created by Damien Pearl</p>
   </footer>
+
+<script src="script.js">
+    document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+  
 </body>
 </html>

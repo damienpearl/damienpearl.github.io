@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A curated list of online resources.">
+  <title>Resources</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" /> <!-- change later... -->
+  <!-- Google Fonts: Inter -->
+  <!--<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" /> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+<style>
+    main {
+        padding: 1rem;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        background: #fff;
+        margin: 0.5rem 0;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">damien pearl</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">← Back to Home</a></li>
+
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+          <!-- Blurb Section -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+            <h1>Resource List</h1>
+            <p>
+               *IN PROGRESS* I learn best through interacting with the material, so I've been searching for interactive resources associated with my studies. Here are some resources I have found useful for my Mechanical Engineering courses so far.
+
+            </p>
+        </section>
+
+        <button class="toggle-embeds-btn" onclick="toggleEmbeds()">Hide All Embeds</button>
+        <div class="resource">
+            <h3>Seeing Theory</h3>
+            <p>
+               This open access website has interactive tools to help visualize basic concepts in probability and statistics.
+            </p>
+            <div class="iframe-container">
+              <iframe src="https://seeing-theory.brown.edu/index.html" class="embed" allowfullscreen></iframe>
+              <button class="fullscreen-btn" onclick="toggleFullscreen(this)"><img src="img/fullscreen2.png" alt="⛶" /></button>
+            </div>
+        </div>
+          
+        <div class="resource">
+            <h3>Timothy Philpot's MecMovies</h3>
+            <p>
+                Interactive demonstrations, games and practice exercises for broad material mechanical properties.
+                Also see MDSolids. </p>
+            <div class="iframe-container">
+                <iframe src="https://static-archives.git-pages.mst.edu/mecmovie/" class="embed" allowfullscreen></iframe>
+                <button class="fullscreen-btn" onclick="toggleFullscreen(this)">
+                <img src="img/fullscreen2.png" alt="⛶" />
+                </button>
+            </div>
+        </div>
+        
+        <div class="resource">
+            <h3>Thermo Jesus</h3>
+            <p>
+               Mobile app for iOS, contains practice problems with conceptual breakdowns and solutions, water calculator and practice quizzes.
+            </p>
+            
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+  <footer>
+    <p>Created by Damien Pearl</p>
+  </footer>
+
+<script src="script.js">
+    document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+
+<script>
+    let embedsVisible = true;
+    
+    function toggleEmbeds() {
+      const container = document.body; // You can also scope this to a section if needed
+      embedsVisible = !embedsVisible;
+    
+      if (embedsVisible) {
+        container.classList.remove('hide-embeds');
+        document.querySelector('.toggle-embeds-btn').textContent = 'Hide All Embeds';
+      } else {
+        container.classList.add('hide-embeds');
+        document.querySelector('.toggle-embeds-btn').textContent = 'Show All Embeds';
+      }
+    }
+    
+    function toggleFullscreen(button) {
+      const iframe = button.closest('.iframe-container').querySelector('iframe');
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+      } else if (iframe.mozRequestFullScreen) {
+        iframe.mozRequestFullScreen();
+      } else if (iframe.webkitRequestFullscreen) {
+        iframe.webkitRequestFullscreen();
+      } else if (iframe.msRequestFullscreen) {
+        iframe.msRequestFullscreen();
+      }
+    }
+    </script>
+    
+  
+</body>
+</html>

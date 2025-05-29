@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style2.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: 'Inter', sans-serif;
+      }
+
+      body {
+        background: #f9fafb;
+        color: #1f2937;
+      }
+
+      section {
+        min-height: 100vh;
+        padding: 4rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1, h2, h3 {
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      .intro {
+        background: linear-gradient(to right, #6366f1, #8b5cf6);
+        color: white;
+        text-align: center;
+      }
+
+      .intro h1 {
+        font-size: 3rem;
+        font-weight: 800;
+      }
+
+      .intro p {
+        margin-top: 1rem;
+        font-size: 1.25rem;
+      }
+
+      .about, .projects, .resources, .contact {
+        background: white;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .project-card, .resource-card {
+        background: #f3f4f6;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      }
+
+      .project-card:hover, .resource-card:hover {
+        background: #e5e7eb;
+      }
+
+      a {
+        color: #4f46e5;
+        text-decoration: none;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="intro">
+      <h1>Your Name</h1>
+      <p>Engineering Student | Robotics | HCI | Curious Human</p>
+    </section>
+
+    <section class="about" data-aos="fade-up">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I'm currently studying at [Your School], where I focus on human-robot interaction, behavioral data, and building practical tools for research.</p>
+      </div>
+    </section>
+
+    <section class="bg-school" id="about">
+        <div class="content">
+          <h2>Where I Study</h2>
+          <p>I'm currently a student at...</p>
+        </div>
+      </section>
+
+      
+    <section class="projects" data-aos="fade-up">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-card">
+          <h3>Whisper Coding + Robotics Study</h3>
+          <p>Used Whisper AI + manual coding to label participant reasoning; developed a ROS1 system for robotic motion replay, enabling structured human-subjects research.</p>
+        </div>
+        <div class="project-card">
+          <h3>BERT Clustering & Analysis</h3>
+          <p>Clustered participant-designed robot motions using BERT & KMeans to identify patterns of movement interpretation and inform motion model design.</p>
+        </div>
+        <!-- Add more projects as needed -->
+      </div>
+    </section>
+
+    <section class="resources" data-aos="fade-up">
+      <div class="container">
+        <h2>Useful Resources</h2>
+        <div class="resource-card">
+          <h3><a href="https://seeing-theory.brown.edu/" target="_blank">Seeing Theory</a></h3>
+          <p>Interactive visualizations for learning probability & statistics.</p>
+        </div>
+        <div class="resource-card">
+          <h3><a href="https://mechmovies.com/" target="_blank">MechMovies</a></h3>
+          <p>Short animations to explain core engineering principles — especially great for Strength of Materials.</p>
+        </div>
+        <div class="resource-card">
+          <h3><a href="https://etap.nsf.gov/" target="_blank">NSF eTAP Portal</a></h3>
+          <p>National Science Foundation's portal for educational training and practice modules.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" data-aos="fade-up">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>If you want to connect, talk research, or ask about resources, feel free to reach out.</p>
+        <a href="#">Email me</a>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

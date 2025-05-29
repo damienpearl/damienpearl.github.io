@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+  }
+
+  body {
+    background: #f9fafb;
+    color: #1f2937;
+  }
+
+  section {
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1, h2, h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .intro {
+    background: linear-gradient(to right, #6366f1, #8b5cf6);
+    color: white;
+    text-align: center;
+  }
+
+  .intro h1 {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+
+  .intro p {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .about, .projects, .resources, .contact {
+    background: white;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .project-card, .resource-card {
+    background: #f3f4f6;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  }
+
+  .project-card:hover, .resource-card:hover {
+    background: #e5e7eb;
+  }
+
+  a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+.bg-school {
+  background-image: url("../img/umass2.jpg"); /* relative to where style.css is */
+  background-size: cover;       /* scales image to cover entire area */
+  background-position: center;  /* centers the image nicely */
+  background-repeat: no-repeat; /* prevents tiling */
+  
+  min-height: 100vh;            /* makes it full screen height */
+  width: 100%;                  /* full width */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  position: relative;
+  z-index: 1;
+}
+  
